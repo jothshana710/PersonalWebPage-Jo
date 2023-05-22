@@ -1,0 +1,120 @@
+.project-skill-con{
+  height:100vh;
+  background-color: rgb(0, 0, 0);
+  color:rgb(0, 2, 70);
+}
+
+.project-skill-con{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project-con{
+  display: flex;
+  flex-direction: column;
+  row-gap:30px;
+}
+.project-title{
+  text-align: center;
+  color:rgb(247, 250, 253);
+  padding-top:40px;
+}
+.main-cont-con{
+  background-color:rgb(247, 250, 253);
+  width:500px;
+  height:250px;
+  padding:20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.main-cont-con:hover{
+  background-color: rgb(199, 241, 241);
+  background-image: linear-gradient(to bottom,rgb(199, 241, 241),rgb(195, 197, 255));
+  padding: 35px;
+}
+.main-cont-con:hover .circle-img{
+  border:none;
+}
+.main-cont-con:active{
+  padding:10px;
+}
+
+.img-title-con,.text-con,.main-cont-con{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-con
+.project-content{
+  text-align: center;
+}
+
+.circle-img{
+  width:100px;
+  height:100px;
+  border-radius:80px;
+  border:3px solid rgb(195, 197, 255);
+}
+
+/*--SKILL CONTAINER--*/
+
+.skill-con{
+  color:white;
+  display:grid;
+  grid-template-rows: 2fr 12fr;
+  place-items: center;
+}
+.skil-con{
+  display:flex;
+  flex-direction: column;
+  row-gap:35px;
+}
+.skil-circ-con{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  
+}
+.circle-con{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:140px;
+  height:140px;
+  margin:30px;
+  border-radius:1000px;
+  border:5px solid rgb(195, 197, 255);
+  font-size:20px;
+  font-weight: 600;
+  transition: all 0.8s ease-in-out;
+}
+
+.circle-con:hover+.per{
+  display:block;
+  color:white;
+}
+.circle-con:hover{
+  padding:25px;
+  margin:0;
+}
+#html-cir:hover,#css-cir:hover,#js-cir:hover,#java-cir:hover,#md-cir:hover,#git-cir:hover{
+  border:10px solid rgb(45, 137, 212);
+  font-size: 30px;
+  color:#FCF6F5FF;
+}
+#html-cir:hover,#css-cir:hover,#git-cir:hover{
+  transform: rotate(45deg);
+  border-left:10px solid transparent;
+}
+#html-cir:hover .cont-in-cir,#css-cir:hover .cont-in-cir,#git-cir:hover .cont-in-cir,#js-cir:hover .cont-in-cir,#git-cir:hover .cont-in-cir,#md-cir:hover .cont-in-cir,#java-cir:hover .cont-in-cir{
+  transition: all 0s;
+  transform: rotate(-45deg);
+}
+#js-cir:hover,#md-cir:hover,#java-cir:hover{
+  transform: rotate(45deg);
+  border-left:10px solid transparent;
+  border-bottom:10px solid transparent;
+}
+#java-cir:hover{
+  border-right:10px solid transparent;
+}

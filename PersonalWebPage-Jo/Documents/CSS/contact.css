@@ -1,0 +1,99 @@
+.contact-con{
+  background-color: rgb(255, 255, 255);
+  height:100vh;
+}
+.content-con{
+  width: 900px;
+}
+.contact-title,.content-con,.contact-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(0, 0, 0);
+}
+.contact-title{
+  margin-bottom:50px;
+}
+.title-touch{
+  font-size:48px;
+  font-weight:600;
+}
+/*.span-touch{
+ font-size:20px;  
+ font-weight:600; 
+ color:rgb(0, 2, 70);
+}*/
+.message-box{
+  width:800px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.4fr;
+}
+.title-content{
+  display:grid;
+  grid-template-rows: 20px 100px;
+  row-gap:20px;
+}
+.contact-details{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+.subdet-con{
+  display:grid;
+  grid-template-columns: 0.1fr 2fr;
+  float:center;
+}
+.get-title{
+  font-size: 25px;
+}
+.get-content,.sub-title-ans,.span-touch{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+#link-email{
+  transition: all 0.3s;
+}
+#link-email:hover{
+  color:#00458a;
+}
+
+.contact-linker{
+  margin-top:20px;
+  height:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+#igit,#ilinkedin,#itwit,#iwhat,#iinsta{
+  font-size:30px;
+  color:rgb(20, 20, 20);
+  transition: all 0.3s;
+}
+#igit:hover,#ilinkedin:hover,#itwit:hover,#iwhat:hover,#iinsta:hover{
+  float:left;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255); 
+  padding:4px;
+  border-radius:4px;
+}
+#igit:active,#ilinkedin:active,#itwit:active,#iwhat:active,#iinsta:active{
+  opacity:0.7;
+}
+
+#igit:hover{
+  background-color:rgb(91, 6, 87); 
+}
+#ilinkedin:hover{
+  background-color:#0A66C2;
+}
+#itwit:hover{
+  background-color: #1D9BF0;
+}
+#iwhat:hover{
+  background-color: #25D366;
+}
+#iinsta:hover{
+  background-image:linear-gradient(to bottom , #f8344e , rgb(255, 0, 221),rgb(239, 186, 52));
+}
